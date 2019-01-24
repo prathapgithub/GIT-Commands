@@ -1,0 +1,17 @@
+Steps to create feature branch creation from main and push the feature branch to Git server
+Step 1 Clone main branch
+git clone ssh://prathapa.mudium%40oracle.com@alm.oraclecorp.com:2222/cxcommerce_occs_14590/cloud-commerce.git
+git checkout main
+git pull
+Step 2 Create new branch in local
+git checkout -b CustomerDataTesting_19.2 (new branch creation in local)
+Step 3 Push the branch created to Git server
+git push --set-upstream origin CustomerDataTesting_19.2 (push branch to Git server)
+Step 4 Add changes you made in local
+Copy the files from backup to this branch (Common and Service Testing folders)
+Step 5 Verify and Add new files and then commit the files
+git status
+git add .
+git commit -m "19.2 CustomerDataTesting script changes based on new dump changes"
+git status
+git push
